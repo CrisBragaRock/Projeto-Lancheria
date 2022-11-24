@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(243, 243, 94);
+}
+
+/* header */
+
+header {
+  height: 300px;
+  width: 300px;
+  background-color: #464646;
+  margin: 15px auto;
+  background-image: url(../imgs/LOGO/mega-lanches-rock/Facebook/facebook_profile_1000x1000.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 25px white;
+}
+
+/* nav */
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 5px;
+}
+
+nav>a>div.btn-link {
+  width: 100px;
+  line-height: 2.2em;
+  height: 3em;
+  border: 1.3px solid #464646;
+  padding: 5px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+nav>a {
+  text-decoration: none;
+  color: #464646;
+  font-weight: bold;
+}
+
+nav>a>div#active {
+  background-color: rgba(255, 255, 255, 0.479);
+  color: rgb(255, 103, 103);
+}
+
+@media only screen and (min-width: 566px) and (max-width: 1024px) {
+  nav>a>div.btn-link {
+    width: 180px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 4000px) {
+  nav>a>div.btn-link {
+    width: 250px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 35px;
+  }
+}
+
+/* main */
+
+main>article {
+  width: 70%;
+  margin: 10px auto;
+  background-color: white;
+  padding: 7px;
+  border-radius: 15px;
+  transition: .5s;
+  text-align: center;
+}
+
+main>article>h2 {
+  text-align: center;
+  color: rgb(255, 103, 103);
+  margin-bottom: 15px;
+}
+
+main>article>p>span.destaque {
+  color: rgb(255, 103, 103);
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 15px) and (max-width: 600px) {
+  main>article.contato,
+  main>article.cardapio,
+  main>article.contato1 {
+    width: 100%;
+    border-radius: 0;
+  }  
+  
+}
+
+@media only screen and (min-width: 5px) and (max-width: 780px) {
+  div#imgs-esq{
+    opacity: 0;
+  }
+  
+  div#imgs-dir{
+    opacity: 0;
+  }
+}
+
+article.contato1{
+  text-align: justify;
+  text-indent: 1em;
+}
+
+article.contato1>h2{
+  margin-block: 15px;
+}
+
+/* imagens laterais */
+
+#imgs-esq{
+  width: 13%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  transition: .5s;
+}
+
+#imgs-dir{
+  width: 13%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .5s;
+}
+
+#imgs-esq, #imgs-dir{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.f1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/burguer1.webp);
+  background-position: center center;
+}
+
+.f2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/xis1.jpg);
+  background-position: center center;
+}
+
+.f3{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/fritas.webp);
+  background-position: center center;
+}
+
+.f4{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/entreveiro.jpg);
+  background-position: center center;
+}
+
+.f7{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/burguer1.webp);
+  background-position: center center;
+}
+
+.f8{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/xis1.jpg);
+  background-position: center center;
+}
+
+.f6{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/fritas.webp);
+  background-position: center center;
+}
+
+.f5{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/lanches/entreveiro.jpg);
+  background-position: center center;
+}
+
+/* imagens redes-sociais */
+
+main>article.contato>div.rede-social{
+  text-align: center;
+}
+
+main>article.contato>div.rede-social>a>img{
+  width: 90px;
+  margin-block: 15px;
+  padding-inline: 15px;
+}
+
+main>article.contato>h2{
+  display: inline;
+  border-bottom: 2px solid rgb(255, 103, 103);
+}
+
+main>article.contato>p{
+  margin-top: 15px;
+}
+
+.mapa{
+  text-align: center;
+  margin-block: 15px;
+}
+
+main article.contato p{
+  text-indent: 1em;
+}
+
+

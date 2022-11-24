@@ -1,0 +1,134 @@
+/* cardapio */
+
+main>article.cardapio>h2 {
+    margin-bottom: 25px;
+    display: inline;
+    border-bottom: 2px solid rgb(255, 103, 103);
+    padding: 3px;
+    
+}
+
+main>article.cardapio>div.sabor {
+    margin: 0 auto 0;
+    width: 80%;
+    border: 2px solid #464646;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardapio h3 {
+    width: 120px;
+    display: block;
+    color: white;
+    margin: 15px auto 0;
+    background-color: #464646;
+    padding: 5px 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    line-height: 2em;
+}
+
+
+.spc-top {
+    margin-top: 15px;
+    height: 100%;
+}
+
+div.ingredientes {
+    width: 70%;
+    border-right: 1px solid #464646;
+    height: 100%;
+    padding: 5px;
+}
+
+div.valor{
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 25%;
+    margin-left: -20%;
+    height: 150px;
+}
+
+/* div.valor>p{
+    background-color: rgba(99, 202, 99, 0.733);
+    display: inline;
+
+} */
+
+div.ingredientes>p>span.destaque {
+    color: rgb(255, 103, 103);
+    font-size: 1.4em;
+}
+
+div.sabor>div.imagem{
+    min-width: 40%;
+    width: 40%;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: .5s;
+    border-right: 2px solid #464646;
+}
+
+h3>span.destaque{
+    color: rgb(255, 103, 103);
+    font-size: 1.3em;
+}
+
+.valor{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+div.sabor#carne>div.imagem {
+    background-image: url(../imgs/cardapio/x-carne.jpg);
+}
+
+div.sabor#frango>div.imagem {
+    background-image: url(../imgs/cardapio/X-Frango.jpg);
+}
+
+div.sabor#calabresa>div.imagem {
+    background-image: url(../imgs/cardapio/x-calabresa.jpg);
+}
+
+div.sabor#coracao>div.imagem {
+    background-image: url(../imgs/cardapio/x-coracao.jpg);
+}
+
+div.sabor#file>div.imagem {
+    background-image: url(../imgs/cardapio/x-file.jpg);
+}
+
+div.sabor#bacon>div.imagem {
+    background-image: url(../imgs/cardapio/x-bacon.jpg);
+}
+
+@media only screen and (min-width: 15px) and (max-width: 780px) {
+    main>article.cardapio>div.sabor {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    main>article.cardapio{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    div.sabor#carne>div.imagem,
+    div.sabor#frango>div.imagem,
+    div.sabor#calabresa>div.imagem,
+    div.sabor#coracao>div.imagem,
+    div.sabor#file>div.imagem,
+    div.sabor#bacon>div.imagem {
+        border-radius: 0px;
+        height: 220px;
+        width: 25%;
+        min-width: 25%;
+    }
+}
+
